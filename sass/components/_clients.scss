@@ -1,0 +1,32 @@
+.clients-list {
+  @extend %align;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  &__link {
+    @extend %align;
+    border: 1px solid var(--svg-color);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    color: var(--svg-color);
+    transition: color var(--transition-duration-timing-function),
+      border-color var(--transition-duration-timing-function);
+
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    transition: fill var(--transition-duration-timing-function);
+
+    &:hover,
+    &:focus {
+      fill: currentColor;
+    }
+  }
+}

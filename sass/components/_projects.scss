@@ -1,0 +1,63 @@
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+    transition: box-shadow var(--transition-duration-timing-function);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__info {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+  }
+
+  &__name {
+    @include font(18px, 700, 36px);
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    margin-bottom: 4px;
+    text-align: left;
+  }
+
+  &__text {
+    @include font(16px, 400, 30px);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    text-align: left;
+  }
+}
+
+.box-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include font(18px, 400, 28px);
+  letter-spacing: 0.03em;
+  color: var(--contrasting-color);
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  overflow: auto;
+  transform: translate(0, 100%);
+  transition: transform var(--transition-duration-timing-function);
+}
+
+.card-set__link:hover .overlay,
+.card-set__link:focus .overlay {
+  transform: translate(0, 0);
+}

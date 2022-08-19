@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Хедер -->
+    <header>
+      <!-- Навигация -->
+
+      <div class="container main-header">
+        <nav class="navigation">
+          <a href="./index.html" lang="en" class="logo"
+            >Web<span class="logo_theme--white">Studio</span></a
+          >
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Студия</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link current">Портфолио</a>
+            </li>
+
+            <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- Контактная информация -->
+        <ul class="contact">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg class="contact__icon" width="16" height="12">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Основний контент -->
+    <main>
+      <!-- Фільтр -->
+
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Список проектов</h1>
+          <ul class="filter">
+            <li class="filter__item">
+              <button type="button" class="button button-secondary">Все</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button button-secondary">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button button-secondary">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button button-secondary">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button button-secondary">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- Картотека проектів -->
+
+          <ul class="card-set">
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/projects-desktop/technokryak.jpg            1x,
+                        ./images/projects/projects-desktop/technokryak-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/projects-tablet/technokryktablet.jpg    1x,
+                        ./images/projects/projects-tablet/technokryktablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/projects-mobile/technokrykmobile.jpg    1x,
+                        ./images/projects/projects-mobile/technokrykmobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="" alt="люди на экране компьютера" width="370" height="294" />
+                  </picture>
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Технокряк</h2>
+                  <p class="card-set__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/projects-desktop/neworlean.jpg            1x,
+                        ./images/projects/projects-desktop/neworlean-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/projects-tablet/neworleantablet.jpg    1x,
+                        ./images/projects/projects-tablet/neworleantablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/projects-mobile/neworleanmobile.jpg    1x,
+                        ./images/projects/projects-mobile/neworleanmobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/projects/neworlean.jpg"
+                      alt="двое мужчин играют в баскетбол"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="card-set__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/projects-desktop/seafood.jpg            1x,
+                        ./images/projects/projects-desktop/seafood-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/projects-desctop/seafood.jpg            1x,
+                        ./images/projects/projects-desctop/seafood-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/projects-desctop/seafood.jpg            1x,
+                        ./images/projects/projects-desctop/seafood-desctop@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/projects/"
+                      alt="логотип ресторана Сифуд"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="card-set__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/projects-desktop/technokryak.jpg            1x,
+                        ./images/projects/projects-desktop/technokryak-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/projects-tablet/technokryktablet.jpg    1x,
+                        ./images/projects/projects-tablet/technokryktablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/projects-mobile/technokrykmobile.jpg    1x,
+                        ./images/projects/projects-mobile/technokrykmobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/projects/prime.jpg"
+                      alt="черные наушники"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Проект <span lang="en">Prime</span></h2>
+                  <p class="card-set__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/projects-desctop/technokryak.jpg            1x,
+                        ./images/projects/projects-desctop/technokryak-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/projects-tablet/technokryktablet.jpg    1x,
+                        ./images/projects/projects-tablet/technokryktablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/projects-mobile/technokrykmobile.jpg    1x,
+                        ./images/projects/projects-mobile/technokrykmobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/projects/boxes.jpg"
+                      alt="белая и коричневая коробки"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Проект <span lang="en">Boxes</span></h2>
+                  <p class="card-set__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-setitem">
+              <a class="card-set__link" href="">
+                <div class="box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/projects-desctop/technokryak.jpg            1x,
+                        ./images/projects/projects-desctop/technokryak-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/projects-tablet/technokryktablet.jpg    1x,
+                        ./images/projects/projects-tablet/technokryktablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/projects-mobile/technokrykmobile.jpg    1x,
+                        ./images/projects/projects-mobile/technokrykmobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/projects/inspiration.jpg"
+                      alt="екран монитора с помеченной картой"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-set__info">
+                  <h2 lang="en" class="card-set__name">Inspiration has no Borders</h2>
+                  <p class="card-set__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/projects-desctop/technokryak.jpg            1x,
+                        ./images/projects/projects-desctop/technokryak-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/projects-tablet/technokryktablet.jpg    1x,
+                        ./images/projects/projects-tablet/technokryktablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/projects-mobile/technokrykmobile.jpg    1x,
+                        ./images/projects/projects-mobile/technokrykmobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/projects/limitededition.jpg"
+                      alt="открытая книга"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Издание<span lang="en">Limited Edition</span></h2>
+                  <p class="card-set__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a class="card-set__link-" href="">
+                <div class="box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/projects-desctop/technokryak.jpg            1x,
+                        ./images/projects/projects-desctop/technokryak-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/projects-tablet/technokryktablet.jpg    1x,
+                        ./images/projects/projects-tablet/technokryktablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/projects-mobile/technokrykmobile.jpg    1x,
+                        ./images/projects/projects-mobile/technokrykmobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/projects/lab.jpg" alt="этикетка" width="370" height="294" />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-set__info">
+                  <h2 class="card-set__name">Проект <span lang="en">LAB</span></h2>
+                  <p class="card-set__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="card-set__item">
+              <a class="card-set__link" href="">
+                <div class="box-overlay">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects/projects-desctop/technokryak.jpg            1x,
+                        ./images/projects/projects-desctop/technokryak-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/projects-tablet/technokryktablet.jpg    1x,
+                        ./images/projects/projects-tablet/technokryktablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects/projects-mobile/technokrykmobile.jpg    1x,
+                        ./images/projects/projects-mobile/technokrykmobile@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/projects/growing.jpg"
+                      alt="на мониторе компьютера открыта презентация проекта растущий бизнес"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
+                  <p class="overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="card-set__info">
+                  <h2 lang="en" class="card-set__name">Growing Business</h2>
+                  <p class="card-set__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container container-footer">
+        <div class="company-address">
+          <a href="./index.html" lang="en" class="logo">
+            Web<span class="logo_theme--dark">Studio</span></a
+          >
+          <address>
+            <ul class="address">
+              <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+              </li>
+
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="invitation-box">
+          <p class="invitation-text">присоединяйтесь</p>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscription-box">
+          <p class="invitation-text">Подпишитесь на рассылку</p>
+          <form class="subscription-form">
+            <label>
+              <input
+                class="subscription-form__mail-address"
+                name="user_email"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <span class="subscription-form__wrapper">
+              <button type="submit" class="subscription-form__btn">
+                Подписаться
+                <svg class="subscription-form__icon" width="24" height="24">
+                  <use href="./images/icons.svg#iconsend"></use>
+                </svg>
+              </button>
+            </span>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

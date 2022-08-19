@@ -1,0 +1,116 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-dark);
+}
+
+.container-footer {
+  display: flex;
+}
+
+.address {
+  margin-top: 20px;
+  margin-right: 70px;
+
+  &__item {
+    color: var(--contrasting-color);
+    font-style: normal;
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.invitation-box {
+  margin-right: 93px;
+
+  &-position {
+    position: relative;
+  }
+}
+
+.invitation-text {
+  color: var(--contrasting-color);
+  @include font(14px, 700, 16px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.subscription-form {
+  display: flex;
+
+  &__mail-address {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 16px 15px;
+    @include font(12px, 400, 14px);
+    letter-spacing: 0.01em;
+    color: var(--contrasting-color);
+    transition: border-color var(--transition-duration-timing-function);
+
+    &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+      @include font(16px, 400, 20px);
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__btn {
+    @include font(16px, 700, 30px);
+    letter-spacing: 0.06em;
+    color: var(--contrasting-color);
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border: none;
+    padding-top: 10px;
+    padding-right: 62px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    transition: background-color var(--transition-duration-timing-function),
+      box-shadow var(--transition-duration-timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__icon {
+    fill: var(--contrasting-color);
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+  }
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+    margin-left: 12px;
+  }
+}
