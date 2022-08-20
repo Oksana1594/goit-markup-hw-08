@@ -10,6 +10,51 @@
 //   align-items: center;
 // }
 
+.logo {
+  font-family: var(--secondary-font);
+  color: var(--accent-color);
+  @include font(24px, 700, 28px);
+  letter-spacing: 0.03em;
+  //   margin-right: 93px;
+
+  &_theme--dark {
+    color: var(--contrasting-color);
+  }
+
+  &_theme--white {
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+}
+
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  &__icon {
+    fill: var(--title-text-color);
+  }
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+// desktop
+
 // .logo {
 //   font-family: var(--secondary-font);
 //   color: var(--accent-color);

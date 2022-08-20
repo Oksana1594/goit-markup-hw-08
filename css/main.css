@@ -65,6 +65,33 @@ body {
   letter-spacing: 0.03em;
 }
 
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 .button {
   color: var(--contrasting-color);
   background-color: var(--accent-color);
@@ -76,6 +103,45 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   border-radius: 4px;
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+}
+.logo_theme--dark {
+  color: var(--contrasting-color);
+}
+.logo_theme--white {
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+}
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.mobile-menu-open__icon {
+  fill: var(--title-text-color);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .hero {
