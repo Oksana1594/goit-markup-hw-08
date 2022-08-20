@@ -116,7 +116,7 @@
     <main>
       <!-- Герой -->
 
-      <section class="hero banner">
+      <section class="hero">
         <div class="container hero-container">
           <div class="hero__position">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -184,7 +184,7 @@
 
       <!-- Чим мы занимаемся -->
 
-      <section class="section">
+      <section class="section section-services">
         <div class="container">
           <h2 class="title title-services">Чем мы занимаемся</h2>
           <ul class="services">
@@ -233,7 +233,24 @@
                   "
                   media="(min-width:1200px)"
                 />
+                <source
+                  srcset="
+                    ./images/employees/employees-tablet/igortablet.jpg    1x,
+                    1x,
+                    ./images/employees/employees-tablet/igortablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees/employees-mobile/igormobile.jpg    1x,
+                    1x,
+                    ./images/employees/employees-mobile/igormobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
                 <img
+                  class="employee-list__img"
                   src="./images/employees/igor.jpg"
                   alt="Фото Игоря Демьяненко"
                   width="270"
@@ -293,12 +310,39 @@
             </li>
 
             <li class="employee-list__card">
-              <img
-                src="./images/employees/img4.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/employees/employees-desktop/olga-desktop.jpg    1x,
+                    1x,
+                    ./images/employees/employees-desktop/olga-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees/employees-tablet/olgatablet.jpg    1x,
+                    1x,
+                    ./images/employees/employees-tablet/olgatablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees/employees-mobile/olgamobile.jpg    1x,
+                    1x,
+                    ./images/employees/employees-mobile/olgamobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="employee-list__img"
+                  src="./images/employees/olga.jpg"
+                  alt="Фото Ольги Репиной"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="employee-list__info">
                 <h3 class="employee-list__name">Ольга Репина</h3>
                 <p lang="en" class="employee-list__text">Frontend Developer</p>
@@ -352,12 +396,38 @@
             </li>
 
             <li class="employee-list__card">
-              <img
-                src="./images/employees/img5.jpg"
-                alt="Фото Николая Тарасова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/employees/employees-desktop/nikolay-desktop.jpg    1x,
+                    1x,
+                    ./images/employees/employees-desktop/nikolay-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees/employees-tablet/nikolaytablet.jpg    1x,
+                    1x,
+                    ./images/employees/employees-tablet/nikolaytablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees/employees-mobile/nikolaymobile.jpg    1x,
+                    1x,
+                    ./images/employees/employees-mobile/nikolaymobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/employees/img5.jpg"
+                  alt="Фото Николая Тарасова"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="employee-list__info">
                 <h3 class="employee-list__name">Николай Тарасов</h3>
                 <p lang="en" class="employee-list__text">Marketing</p>
@@ -411,12 +481,38 @@
             </li>
 
             <li class="employee-list__card">
-              <img
-                src="./images/employees/img6.jpg"
-                alt="Фото Михаила Ермакова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/employees/employees-desktop/mikhail-desktop.jpg    1x,
+                    1x,
+                    ./images/employees/employees-desktop/mikhail-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees/employees-tablet/mikhailtablet.jpg    1x,
+                    1x,
+                    ./images/employees/employees-tablet/mikhailtablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees/employees-mobile/mikhailmobile.jpg    1x,
+                    1x,
+                    ./images/employees/employees-mobile/mikhailmobile@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/employees/mikhail.jpg"
+                  alt="Фото Михаила Ермакова"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="employee-list__info">
                 <h3 class="employee-list__name">Михаил Ермаков</h3>
                 <p lang="en" class="employee-list__text">UI Designer</p>
