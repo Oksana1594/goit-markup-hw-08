@@ -32,3 +32,13 @@
 .thumb {
   position: relative;
 }
+
+@media screen and (max-width: 1200px) {
+  .title-services {
+    display: none;
+  }
+
+  .services {
+    display: none;
+  }
+}

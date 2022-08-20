@@ -341,58 +341,59 @@ header {
     color: var(--accent-color);
   }
 }
-.hero {
-  padding: 200px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgroundimage.jpg);
+.banner {
+  min-height: 100%;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bg.jpg");
   background-color: #c4c4c4;
-  background-size: cover;
-}
-.hero__position {
-  display: flex;
-  justify-content: center;
-}
-.hero__title {
-  color: var(--contrasting-color);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.3636363636;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  width: 696px;
-}
-.hero-container {
-  text-align: center;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
-.hero-button {
-  display: inline-block;
-  padding: 10px 32px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  text-align: center;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin-top: 30px;
-  transition: background-color var(--transition-duration-timing-function);
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: url("../../images/bgdesktop@2x.jpg");
+  }
 }
-.hero-button:hover, .hero-button:focus {
-  background-color: #188ce8;
+@media screen and (max-width: 767px) {
+  .hero {
+    padding: 116px 0;
+  }
+  .hero__position {
+    display: flex;
+    justify-content: center;
+  }
+  .hero__title {
+    color: var(--contrasting-color);
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.6153846154;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    width: 360px;
+  }
+  .hero-container {
+    text-align: center;
+  }
+  .hero-button {
+    display: inline-block;
+    padding: 10px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    transition: background-color var(--transition-duration-timing-function);
+  }
+  .hero-button:hover, .hero-button:focus {
+    background-color: #188ce8;
+  }
 }
-
-.section-benefits {
-  padding-top: 94px;
-  padding-bottom: 0;
-}
-
-.benefits {
-  display: flex;
-}
-.benefits__item {
-  min-width: 270px;
-}
-.benefits__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 118px 0;
+  }
 }
 .benefits__subtitle {
   color: var(--title-text-color);
@@ -403,7 +404,7 @@ header {
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 30px;
-  text-align: left;
+  text-align: center;
 }
 .benefits__text {
   font-size: 14px;
@@ -413,11 +414,53 @@ header {
 }
 
 .wrapper {
-  width: 100%;
   height: 120px;
   background-color: var(--background-secondary-color);
 }
 
+.section-benefits {
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits__item {
+    min-width: 450px;
+  }
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .benefits__subtitle {
+    text-align: left;
+  }
+  .benefits__item {
+    flex-basis: calc((100% - 30px) / 2);
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-benefits {
+    padding-top: 94px;
+  }
+  .section-benefits .benefits {
+    column-gap: 0;
+  }
+  .section-benefits .benefits__item {
+    flex-basis: calc((100% - 90px) / 4);
+    max-width: 270px;
+  }
+  .section-benefits .benefits__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -452,6 +495,14 @@ header {
   position: relative;
 }
 
+@media screen and (max-width: 1200px) {
+  .title-services {
+    display: none;
+  }
+  .services {
+    display: none;
+  }
+}
 .section-team {
   background-color: var(--background-secondary-color);
 }
