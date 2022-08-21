@@ -4,9 +4,7 @@
   border: none;
   font-family: inherit;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include font(16px, 700, 30px);
   letter-spacing: 0.03em;
   border-radius: 4px;
 }

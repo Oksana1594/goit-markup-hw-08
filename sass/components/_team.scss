@@ -28,7 +28,7 @@
   background-color: var(--contrasting-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .title {
     margin-bottom: 30px;
   }
@@ -38,13 +38,10 @@
   }
 
   .employee-list__img {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 460px;
   }
-
-  // .employee-list__info {
-  //   width: 450px;
-  // }
 
   .section {
     padding-top: 60px;
@@ -54,9 +51,8 @@
 @media screen and (min-width: 768px) {
   .employee-list {
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
 
     &__card {
       flex-basis: calc((100% - 30px) / 2);
@@ -68,16 +64,16 @@
     height: 374px;
   }
 
-  .employee-list__info {
-    width: 354px;
-  }
-
-  .employee-list__card {
-    width: 354px;
+  .employee-list__card:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .employee-list {
+    max-width: 1170px;
+  }
+
   .employee-list__card {
     flex-basis: calc((100% - 90px) / 4);
   }
@@ -95,36 +91,3 @@
     width: 270px;
   }
 }
-
-// .employee-list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 30px;
-
-//   &__card {
-//     flex-basis: calc((100% - 90px) / 4);
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//       0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
-//     width: 270px;
-//     background-color: var(--contrasting-color);
-//   }
-
-//   &__info {
-//     padding: 30px 0;
-//   }
-
-//   &__name {
-//     @include font(16px, 500, 19px);
-//     letter-spacing: 0.03em;
-//     color: var(--title-text-color);
-//     text-align: center;
-//     margin-bottom: 10px;
-//   }
-
-//   &__text {
-//     @include font(16px, 400, 19px);
-//     margin-bottom: 16px;
-//     text-align: center;
-//   }
-// }
