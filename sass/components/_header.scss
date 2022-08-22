@@ -19,16 +19,6 @@ header {
   }
 }
 
-.logo-header {
-  @media screen and (min-width: 767px), (max-width: 1199px) {
-    margin-right: 88px;
-  }
-
-  @media screen and (min-width: 1220px) {
-    margin-right: 93px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
@@ -138,6 +128,10 @@ header {
       fill: currentColor;
     }
   }
+
+  .logo-header {
+    margin-right: 88px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -163,5 +157,15 @@ header {
 
   .contact__item + .contact__item {
     margin-left: 30px;
+  }
+
+  .logo-header {
+    margin-right: 93px;
+  }
+
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
   }
 }
