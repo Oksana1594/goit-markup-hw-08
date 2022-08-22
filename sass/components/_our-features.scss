@@ -1,7 +1,9 @@
 .benefits {
   &__subtitle {
     color: var(--title-text-color);
-    @include font(14px, 700, 16px);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -10,7 +12,9 @@
   }
 
   &__text {
-    @include font(14px, 400, 24px);
+    font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
     text-align: left;
   }
 }
@@ -38,9 +42,9 @@
     }
   }
 
-  .section-benefits {
-    padding-bottom: 60px;
-  }
+  // .section-benefits {
+  //   padding-bottom: 60px;
+  // }
 }
 
 @media screen and (min-width: 768px) {
@@ -63,8 +67,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .section-benefits {
-    padding-top: 94px;
+  // .section-benefits {
+  //   padding-top: 94px;
 
     .benefits {
       column-gap: 0;
@@ -80,4 +84,4 @@
       }
     }
   }
-}
+

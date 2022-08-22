@@ -46,6 +46,16 @@
 
   .mobile-menu__close-icon {
     fill: var(--title-text-color);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+
+  .mobile-menu__close-btn:hover .mobile-menu__close-icon,
+  .mobile-menu__close-btn:focus .mobile-menu__close-icon {
+    fill: var(--accent-color);
   }
 
   .mobile-menu_list-nav {
@@ -55,7 +65,9 @@
   .mobile-menu__list-nav-link {
     font-family: var(--primary-font);
     color: var(--title-text-color);
-    @include font(40px, 500, 47px);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     transition: color var(----transition-duration-timing-function);
 
@@ -68,7 +80,9 @@
   .mobile-menu__list-contact-link {
     font-family: var(--primary-font);
     color: var(--title-text-color);
-    @include font(34px, 500, 40px);
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     transition: color var(----transition-duration-timing-function);
 
@@ -76,6 +90,10 @@
     &:focus {
       color: var(--accent-color);
     }
+  }
+
+  .current {
+    color: var(--accent-color);
   }
 
   .mobile-menu_list-nav-item:not(:last-child),
@@ -93,22 +111,19 @@
 
   .mobile-menu__list-social-link {
     font-family: var(--primary-font);
-    color: var(--title-text-color);
-    @include font(18px, 500, 22px);
+    color: var(--accent-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     transition: color var(----transition-duration-timing-function);
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
   }
 
   .mobile-menu_list-social-item:not(:last-child) {
     margin-right: 20px;
   }
 
-  .mobile-menu__list-social-link::after {
+  .mobile-menu_list-social-item:not(:last-child)::after {
     content: '';
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);

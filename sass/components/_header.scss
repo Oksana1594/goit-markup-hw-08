@@ -5,8 +5,11 @@ header {
 .logo {
   font-family: var(--secondary-font);
   color: var(--accent-color);
-  @include font(24px, 700, 28px);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-right: 88px;
 
   &_theme--dark {
     color: var(--contrasting-color);
@@ -31,6 +34,15 @@ header {
     border: none;
     line-height: 0;
   }
+
+  .mobile-menu-open__icon {
+    fill: var(--title-text-color);
+  }
+
+  .mobile-menu-open:hover .mobile-menu-open__icon,
+  .mobile-menu-open:focus .mobile-menu-open__icon {
+    fill: var(--accent-color);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -40,11 +52,6 @@ header {
 
   .mobile-menu-open {
     display: none;
-  }
-
-  .logo {
-    @include font(24px, 700, 28px);
-    margin-right: 88px;
   }
 
   .main-header,
@@ -60,7 +67,9 @@ header {
   }
 
   .menu__link {
-    @include font(14px, 500, 16px);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
     transition: color var(--transition-duration-timing-function);
     padding: 32px 0;
     color: var(--title-text-color);
@@ -94,7 +103,9 @@ header {
   .contact__link {
     display: flex;
     align-items: center;
-    @include font(12px, 500, 14px);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.17;
     color: var(--primary-text-color);
     transition: color var(--transition-duration-timing-function);
 
@@ -122,7 +133,9 @@ header {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    @include font(26px, 700, 31px);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
     margin-right: 93px;
 
     &_theme--dark {
