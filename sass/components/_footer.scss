@@ -10,14 +10,8 @@
   }
 }
 
-// .logo-footer {
-//   @media screen and (max-width: 1199px) {
-//     text-align: center;
-//   }
-// }
-
 .invitation-box {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     width: 206px;
     margin: 0 auto;
   }
@@ -25,23 +19,23 @@
 
 .company-address {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
-// .logo-footer {
-//   // align-self: center;
-//   width: 154px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
-.address {
-  margin-top: 20px;
+.logo-footer {
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
+.logo-footer {
+  margin-bottom: 20px;
+}
+
 .address__item {
   color: var(--contrasting-color);
   font-style: normal;
-  // text-align: center;
 }
 .address__link {
   color: rgba(255, 255, 255, 0.6);
@@ -65,7 +59,6 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-top: 60px;
-  // text-align: center;
 }
 
 .invitation-text {
@@ -140,68 +133,71 @@
 }
 
 .tablet-position {
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px), (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    // justify-content: space-between;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscription-box {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 60px;
+  }
+
+  .invitation-text {
+    margin-top: -60px;
+  }
+
+  .invitation-box {
+    margin-left: 165px;
+  }
+
+  .invitation-text-form {
+    margin-top: 60px;
   }
 }
 
-// @media screen and (min-width: 1200px) {
-//   .container-footer {
-//     display: flex;
-//   }
-//   .subscription-form {
-//     margin-left: 93px;
-//     display: flex;
-//     row-gap: 20px;
-//   }
-//   .subscription-form__mail-address {
-//     width: 358px;
-//   }
-//   .subscription-form::placeholder {
-//     margin-bottom: 20px;
-//   }
-//   .subscription-form__wrapper {
-//     margin-left: 12px;
-//   }
-//   .subscription-form__btn {
-//     margin-top: 0;
-//   }
-//   .subscription-form__icon {
-//     transform: translateY(-50%);
-//   }
-//   .address {
-//     margin-top: 20px;
-//   }
-//   .address__item {
-//     text-align: left;
-//   }
-//   .invitation-box {
-//     margin-right: 93px;
-//     margin-left: 70px;
-//   }
-//   .invitation-box-position {
-//     position: relative;
-//   }
-//   .invitation-text {
-//     margin-top: 0;
-//     text-align: left;
-//   }
-//   .invitation-text-form {
-//     margin-left: 93px;
-//   }
-//   .invitation-box {
-//     width: 206px;
-//     margin: 0;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+  }
+  .subscription-form {
+    margin-left: 93px;
+    display: flex;
+    row-gap: 20px;
+  }
+  .invitation-text {
+    margin-top: 0;
+  }
+
+  .tablet-position {
+    align-items: flex-start;
+  }
+
+  .invitation-box {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+
+  .subscription-form__mail-address {
+    width: 358px;
+  }
+
+  .subscription-form__wrapper {
+    margin-left: 12px;
+  }
+  .subscription-form__btn {
+    margin-top: 0;
+  }
+
+  .subscription-form {
+    margin-left: 0;
+  }
+  .subscription-form__icon {
+    transform: translateY(-50%);
+  }
+}

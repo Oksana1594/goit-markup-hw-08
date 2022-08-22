@@ -214,3 +214,29 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    max-height: 609px;
+
+    &-text {
+      text-align: center;
+    }
+  }
+
+  .modal-form-check-desc,
+  .agreement-link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .modal-form-check-desc::before {
+    margin-left: -3px;
+    content: '';
+  }
+
+  .modal-form-message {
+    height: 120px;
+  }
+}

@@ -2,6 +2,7 @@
   .mobile-menu__container {
     position: relative;
     padding: 48px 25px;
+    box-shadow: 0 1 1 rgba(0, 0, 0, 0.5);
   }
 
   .mobile-menu {
@@ -13,7 +14,7 @@
     height: 100%;
     max-height: 796px;
     background-color: var(--contrasting-color);
-    box-shadow: 0 0 0 100max rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
