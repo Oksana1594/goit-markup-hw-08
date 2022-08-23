@@ -37,11 +37,7 @@
   position: relative;
 }
 
-@media screen and (max-width: 1200px) {
-  .title-services {
-    display: none;
-  }
-
+@media screen and (max-width: 1199px) {
   .section-services {
     display: none;
   }

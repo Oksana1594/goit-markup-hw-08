@@ -369,15 +369,11 @@ header {
   }
 }
 .hero {
-  min-height: 100%;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/img-mobile.jpg");
+  height: 100%;
   background-color: #c4c4c4;
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.hero {
   padding: 116px 0;
 }
 .hero__position {
@@ -410,7 +406,12 @@ header {
   background-color: #188ce8;
 }
 
-@media screen and (max-width: 767) and (min-device-pixel-ratio: 2), screen and (max-width: 767) and (min-resolution: 192dpi), screen and (max-width: 767) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-mobile.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bgmobile@2x.jpg");
   }
@@ -418,7 +419,7 @@ header {
 @media screen and (min-width: 768px) and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     padding: 118px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bgtablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgtablet.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -428,8 +429,13 @@ header {
 }
 @media screen and (min-width: 1200px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-desktop.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
     padding: 200px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bg-desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bgdesktop@2x.jpg");
   }
   .hero__title {
     color: var(--contrasting-color);
@@ -439,11 +445,6 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.06em;
     width: 696px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bgdesktop@2x.jpg");
   }
 }
 .benefits__subtitle {
@@ -546,10 +547,7 @@ header {
   position: relative;
 }
 
-@media screen and (max-width: 1200px) {
-  .title-services {
-    display: none;
-  }
+@media screen and (max-width: 1199px) {
   .section-services {
     display: none;
   }
@@ -582,7 +580,6 @@ header {
 
 .employee-list__card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  width: 450px;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--contrasting-color);
 }
@@ -597,7 +594,7 @@ header {
   .employee-list__img {
     width: 100%;
     max-width: 450px;
-    height: 460px;
+    max-height: 460px;
   }
 }
 @media screen and (min-width: 768px) {
