@@ -40,5 +40,9 @@
 @media screen and (max-width: 1199px) {
   .section-services {
     display: none;
+
+    .services-img {
+      display: none;
+    }
   }
 }
